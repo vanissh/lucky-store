@@ -1,0 +1,24 @@
+{
+    "Мягкие игрушки": [
+        {
+            "name": "korgi",
+            "price": "1650",
+            "description" : "Размер: 60 x 24 x 19 см, вес: 780г",
+            "urls": [
+                "src/img/products/toys/korgi/1",
+                "src/img/products/toys/korgi/2",
+                "src/img/products/toys/korgi/3"
+            ]
+        },
+        {
+            "name": "spotted-cat",
+            "price": "1550",
+            "description" : "Посмотрите, какой этот котик очаровательный! Он длинный, мягкий и похож на     подушку. Вы можете его обнимать, играть с ним и спать на нём – он будет только рад. Разве можно не влюбиться в этого милашку? Размер: 45 х 20 см. Наполнитель: синтепон. Страна-изготовитель: Китай.",
+            "urls": [
+                "src/img/products/toys/spotted-cat/1",
+                "src/img/products/toys/spotted-cat/2",
+                "src/img/products/toys/spotted-cat/3"
+            ]
+        }
+    ]
+}

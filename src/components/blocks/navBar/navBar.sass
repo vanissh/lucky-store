@@ -1,0 +1,66 @@
+$main-color: #4a4a4a
+$second-color: #e3e3e3
+
+.nav
+    position: relative
+    height: 40px
+    padding: 30px 70px
+    &__content
+        display: grid
+        grid-template-columns: 1fr 3fr 1fr
+    &__logo
+        cursor: pointer
+        text-align: start
+        img
+            height: 35px
+    &__menu
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        &-wrapper
+            position: relative
+        a
+            margin-right: 22px
+            font-size: 16px
+            font-weight: 300
+            text-decoration: none
+            color: $main-color
+            border-bottom: 1px solid transparent
+            transition: 0.4s border-bottom
+            &:hover
+                border-bottom: 1px solid $main-color
+            &:nth-child(1)
+                i
+                    display: inline-block
+                    margin-left: 5px
+                    vertical-align: middle
+                    margin-bottom: 2px
+                    transition: transform 0.5s
+                .rotate
+                    transform: rotate(180deg)
+    &__icons
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        &-total
+            display: flex
+            justify-content: center
+            align-items: center
+            position: absolute
+            right: -8px
+            top: -8px
+            height: 15px
+            width: 15px
+            border-radius: 100%
+            background-color: $main-color
+            color: #fff
+            font-size: 10px
+        a
+            position: relative
+            text-decoration: none
+            margin-left: 22px
+            &:nth-child(1)
+                margin-left: 0
+            i
+                font-size: 20px
+                color: #000

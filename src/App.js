@@ -1,24 +1,53 @@
-import logo from './logo.svg';
-import './App.css';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
+import NavBar from './components/blocks/navBar/NavBar';
+import Home from './pages/Home';
+import Profile from './pages/Profile';
+import Cart from './pages/Cart';
+import Favorite from './pages/Favorite';
+import Catalog from './pages/Catalog';
+import first from './static/slider/first_bg.png'
+import second from './static/slider/second_bg.png'
+import third from './static/slider/third_bg.png'
 
+//context для передачи links в компонент dropdown
+//пока пишу заглушку
+//links = ['Мягкие игрушки', 'Украшения', 'Канцелярия', 'Для дома', 'Для животных']
 function App() {
+
+  const links = ['Мягкие игрушки', 'Украшения', 'Канцелярия', 'Для дома', 'Для животных']
+  const sliderInfo = [
+    {
+      title: 'Lorem ipsum',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+      img: first
+    },
+    {
+      title: 'Lorem ipsum',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+      img: second
+    },
+    {
+      title: 'Lorem ipsum',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+      img: third
+    }
+  ]
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <NavBar links={links}/>
+      <Routes>
+        <Route path={'/'} exact element={<Home info={sliderInfo}/>}/>
+        <Route path={'/profile'} element={<Profile/>}/>
+        <Route path={'/cart'} element={<Cart/>}/>
+        <Route path={'/favorite'} element={<Favorite/>}/>
+        <Route path={'/catalog'} element={<Catalog/>}/>
+      </Routes>
+    </Router>
   );
 }
 

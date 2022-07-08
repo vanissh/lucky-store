@@ -1,0 +1,49 @@
+$main-color: #4a4a4a
+$second-color: #e3e3e3
+
+.dropdown
+    position: absolute
+    visibility: hidden
+    overflow: hidden
+    display: flex
+    top: 100%
+    flex-direction: column
+    align-items: flex-start
+    background-color: #fff
+    min-width: 250px
+    box-shadow: -2px 2px 81px -27px rgba(0, 0, 0, 0.3)
+    transform: translateY(30px)
+    transition: transform 0.2s ease-in-out, opacity 0.2s, z-index 0s 0.2s
+    opacity: 0
+    a
+        width: 100%
+        padding: 20px 30px
+        display: flex
+        justify-content: flex-start
+        color: $main-color
+        font-weight: 300
+        text-decoration: none
+        i
+            margin-right: 20px
+        &:hover
+            background-color: $second-color
+        &:nth-child(1)
+            padding-top: 30px
+        &:nth-last-child(1)
+            padding-bottom: 30px
+    &_active
+        visibility: visible
+        transform: translateY(0)
+        opacity: 1
+        z-index: 10
+        a
+            animation: slideInLeft 0.3s ease-in-out backwards
+
+@keyframes slideInLeft
+    from
+        transform: translate(-25%,0)
+        opacity: 0
+
+    to
+        transform: translate(0,0)
+        opacity: 1
