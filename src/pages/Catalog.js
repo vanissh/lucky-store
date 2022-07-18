@@ -5,7 +5,7 @@ import BtnScrollUp from '../components/blocks/btnToTop/BtnScrollUp'
 
 const Catalog = () => {
 
-    const {activeCategory} = useSelector(state => state.product)
+    const {activeCategory} = useSelector(state => state.productReducer)
 
     return (
         <>

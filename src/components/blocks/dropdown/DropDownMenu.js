@@ -2,20 +2,18 @@ import { useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import './dropdownMenu.sass'
 
-import {useHttp} from '../../../hooks/http.hook.js'
-import { fetchCategories, setActiveCategory } from '../../../actions/actionCreator.js'
+import { setActiveCategory, fetchCategories} from '../../../slices/productSlice'
 import { useDispatch, useSelector } from 'react-redux';
 
 const DropDownMenu = ({active}) => {
 
     const menuActive = active ? 'dropdown_active' : ''
 
-    const { categories } = useSelector(state => state.product)
+    const { categories } = useSelector(state => state.productReducer)
     const dispatch = useDispatch()
-    const {request} = useHttp()
 
     useEffect(() => {
-        dispatch(fetchCategories(request))
+        dispatch(fetchCategories())
     }, [])
 
     return (

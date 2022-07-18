@@ -3,11 +3,15 @@ import { useState } from 'react'
 import DropDownMenu from '../dropdown/DropDownMenu'
 import logo from '../../../assets/static/icons/logo.png'
 import './navBar.sass'
+import { useSelector } from 'react-redux'
 
 const NavBar = () => {
 
     const [active, setActive] = useState(false)
     const [rotate, setRotate] = useState(null)
+
+    const {favorites} = useSelector(state => state.favReducer)
+    const {cart} = useSelector(state => state.cartReducer)
 
     const toActive = () => {
         setActive(true)
@@ -50,11 +54,11 @@ const NavBar = () => {
                         </NavLink>
                         <NavLink to="/favorites">
                             <i className="icon icon-heart"></i>
-                            <span className="nav__icons-total">0</span>
+                            <span className="nav__icons-total">{favorites.length}</span>
                         </NavLink>
                         <NavLink to="/cart">
                             <i className="icon icon-cart"></i>
-                            <span className="nav__icons-total">0</span>
+                            <span className="nav__icons-total">{cart.length}</span>
                         </NavLink>
                         <NavLink to="/profile">
                             <i className="icon icon-user"></i>

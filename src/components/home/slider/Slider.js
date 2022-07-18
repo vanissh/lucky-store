@@ -3,7 +3,29 @@ import './slider.sass'
 import Button from '../../blocks/button/Button'
 import { NavLink } from 'react-router-dom'
 
-const Slider = ({info}) => {
+import first from '../../../assets/static/slider/first_bg.png'
+import second from '../../../assets/static/slider/second_bg.png'
+import third from '../../../assets/static/slider/third_bg.png'
+
+const Slider = () => {
+
+    const info = [
+        {
+            title: 'Lorem ipsum',
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+            img: first
+        },
+        {
+            title: 'Lorem ipsum',
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+            img: second
+        },
+        {
+            title: 'Lorem ipsum',
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+            img: third
+        }
+    ]
 
     const [offset, setOffset] = useState(0)
     const [counter, setCounter] = useState(1)
