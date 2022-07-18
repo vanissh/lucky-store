@@ -1,8 +1,8 @@
 import './button.sass'
 
-const Button = (props) => {
+const Button = ({children, render}) => {
     return (
-        <button className="button">{props.children}</button>
+        <button className="button" onClick={render}>{children}</button>
     )
 }
 

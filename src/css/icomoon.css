@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'icomoon';
-    src: url('../fonts/icomoon/icomoon.eot?v1ty8v');
-    src: url('../fonts/icomoon/icomoon.eot?v1ty8v#iefix') format('embedded-opentype'),
-        url('../fonts/icomoon/icomoon.ttf?v1ty8v') format('truetype'),
-        url('../fonts/icomoon/icomoon.woff?v1ty8v') format('woff'),
-        url('../fonts/icomoon/icomoon.svg?v1ty8v#icomoon') format('svg');
+    src: url('../assets/fonts/icomoon/icomoon.eot?kgjlb2');
+    src: url('../assets/fonts/icomoon/icomoon.eot?kgjlb2#iefix') format('embedded-opentype'),
+        url('../assets/fonts/icomoon/icomoon.ttf?kgjlb2') format('truetype'),
+        url('../assets/fonts/icomoon/icomoon.woff?kgjlb2') format('woff'),
+        url('../assets/fonts/icomoon/icomoon.svg?kgjlb2#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -90,4 +90,8 @@
 
 .icon-cart:before {
     content: "\e90f";
+}
+
+.icon-delete:before {
+  content: "\e911";
 }

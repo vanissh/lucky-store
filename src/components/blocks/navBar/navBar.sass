@@ -19,25 +19,25 @@ $second-color: #e3e3e3
         align-items: center
         &-wrapper
             position: relative
-        a
-            margin-right: 22px
-            font-size: 16px
-            font-weight: 300
-            text-decoration: none
-            color: $main-color
-            border-bottom: 1px solid transparent
-            transition: 0.4s border-bottom
-            &:hover
-                border-bottom: 1px solid $main-color
-            &:nth-child(1)
-                i
-                    display: inline-block
-                    margin-left: 5px
-                    vertical-align: middle
-                    margin-bottom: 2px
-                    transition: transform 0.5s
-                .rotate
-                    transform: rotate(180deg)
+    &__link
+        margin-right: 22px
+        font-size: 16px
+        font-weight: 300
+        text-decoration: none
+        color: $main-color
+        border-bottom: 1px solid transparent
+        transition: 0.4s border-bottom
+        &:hover
+            border-bottom: 1px solid $main-color
+        &:nth-child(1)
+            i
+                display: inline-block
+                margin-left: 5px
+                vertical-align: middle
+                margin-bottom: 2px
+                transition: transform 0.5s
+            .rotate
+                transform: rotate(180deg)
     &__icons
         display: flex
         justify-content: flex-end
@@ -64,3 +64,5 @@ $second-color: #e3e3e3
             i
                 font-size: 20px
                 color: #000
+
+@media (max-width)

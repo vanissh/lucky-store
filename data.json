@@ -1,0 +1,144 @@
+{
+    "products": [
+        {
+            "name": "home",
+            "items": [
+                {
+                    "name": "SINNLIG",
+                    "description": "Ароматическая свеча кубическая. Материал - соевый воск. Производитель - Китай",
+                    "price": 324,
+                    "id": "cb2163effc2b4faaaf054b3e3e084486",
+                    "src": [
+                        "https://ae04.alicdn.com/kf/S3c9b9998d4284bbc8abb4b7d22ce364dD/White-Geometric-Rubik-s-Cube-Aromatherapy-Candle-Aromatherapy-Gift-Birthday-Home-Smoke-free-Creative.jpg"
+                    ]
+                },
+                {
+                    "name": "SINNLIG",
+                    "description": "Ароматическая свеча кубическая. Материал - соевый воск. Производитель - Китай",
+                    "price": 324,
+                    "id": "b9ed37fd02c840c2b1a6fde8be7711a9",
+                    "src": [
+                        "https://ae04.alicdn.com/kf/S3c9b9998d4284bbc8abb4b7d22ce364dD/White-Geometric-Rubik-s-Cube-Aromatherapy-Candle-Aromatherapy-Gift-Birthday-Home-Smoke-free-Creative.jpg"
+                    ]
+                },
+                {
+                    "name": "SINNLIG",
+                    "description": "Ароматическая свеча кубическая. Материал - соевый воск. Производитель - Китай",
+                    "price": 324,
+                    "id": "06dc9cce6f8f448ebb882ca96c9f8955",
+                    "src": [
+                        "https://ae04.alicdn.com/kf/S3c9b9998d4284bbc8abb4b7d22ce364dD/White-Geometric-Rubik-s-Cube-Aromatherapy-Candle-Aromatherapy-Gift-Birthday-Home-Smoke-free-Creative.jpg"
+                    ]
+                },
+                {
+                    "name": "SINNLIG",
+                    "description": "Ароматическая свеча кубическая. Материал - соевый воск. Производитель - Китай",
+                    "price": 324,
+                    "id": "5668835aa0e74e29b1d31240d4a0f557",
+                    "src": [
+                        "https://ae04.alicdn.com/kf/H83cc56b6619b4a9c9a392d8b8ac583997/30.jpg"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "toys",
+            "items": [
+                {
+                    "name": "SINNLIG",
+                    "description": "Ароматическая свеча кубическая. Материал - соевый воск. Производитель - Китай",
+                    "price": 324,
+                    "id": "67d17d3d868847149c9930160e317c7e",
+                    "src": [
+                        "https://ae04.alicdn.com/kf/H83cc56b6619b4a9c9a392d8b8ac583997/30.jpg"
+                    ]
+                },
+                {
+                    "name": "SINNLIG",
+                    "description": "Ароматическая свеча кубическая. Материал - соевый воск. Производитель - Китай",
+                    "price": 324,
+                    "id": "1e90f29219dd409aae4c96d5283cdd6a",
+                    "src": [
+                        "https://ae04.alicdn.com/kf/H83cc56b6619b4a9c9a392d8b8ac583997/30.jpg"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "jewellery",
+            "items": [
+                {
+                    "name": "SINNLIG",
+                    "description": "Ароматическая свеча кубическая. Материал - соевый воск. Производитель - Китай",
+                    "price": 324,
+                    "id": "19ee93ce8b2e4d50ab123e722f4b7178",
+                    "src": [
+                        "https://ae04.alicdn.com/kf/H83cc56b6619b4a9c9a392d8b8ac583997/30.jpg"
+                    ]
+                },
+                {
+                    "name": "SINNLIG",
+                    "description": "Ароматическая свеча кубическая. Материал - соевый воск. Производитель - Китай",
+                    "price": 324,
+                    "id": "306d8759f6c242698c72efb5c636ffeb",
+                    "src": [
+                        "https://ae04.alicdn.com/kf/H83cc56b6619b4a9c9a392d8b8ac583997/30.jpg"
+                    ]
+                },
+                {
+                    "name": "SINNLIG",
+                    "description": "Ароматическая свеча кубическая. Материал - соевый воск. Производитель - Китай",
+                    "price": 324,
+                    "id": "8f6cd0b49f2d434c8cddd06305c0ea3d",
+                    "src": [
+                        "https://ae04.alicdn.com/kf/H83cc56b6619b4a9c9a392d8b8ac583997/30.jpg"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "stationery",
+            "items": [
+                {
+                    "name": "SINNLIG",
+                    "description": "Ароматическая свеча кубическая. Материал - соевый воск. Производитель - Китай",
+                    "price": 324,
+                    "id": "8d378252584f465f95adfda6c06b7f4f",
+                    "src": [
+                        "https://ae04.alicdn.com/kf/H83cc56b6619b4a9c9a392d8b8ac583997/30.jpg"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "pets",
+            "items": [
+                {
+                    "name": "SINNLIG",
+                    "description": "Ароматическая свеча кубическая. Материал - соевый воск. Производитель - Китай",
+                    "price": 324,
+                    "id": "14f903608c644acf98a127df76b88e53",
+                    "src": [
+                        "https://ae04.alicdn.com/kf/H83cc56b6619b4a9c9a392d8b8ac583997/30.jpg"
+                    ]
+                }
+            ]
+        }
+    ],
+    "categories": [
+        {"name": "Мягкие игрушки", "label": "toys"},
+        {"name": "Украшения", "label": "jewellery"},
+        {"name": "Канцелярия", "label": "stationery"},
+        {"name": "Для дома", "label": "home"},
+        {"name": "Для животных", "label": "pets"}
+    ],
+    "filters": [
+
+    ],
+    "cart": [
+        
+    ], 
+    "favorites": [
+
+    ]
+}

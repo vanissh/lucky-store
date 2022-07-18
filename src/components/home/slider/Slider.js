@@ -1,20 +1,33 @@
-import { useState, useEffect} from 'react'
+import { useState, useEffect, useRef} from 'react'
 import './slider.sass'
 import Button from '../../blocks/button/Button'
 import { NavLink } from 'react-router-dom'
 
 const Slider = ({info}) => {
 
-    const SLIDE_WIDTH = 1140, MAX = info.length
-
     const [offset, setOffset] = useState(0)
     const [counter, setCounter] = useState(1)
+    const [width, setWidth] = useState(1140)
 
-    const itemRefs = []
+    const itemRefs = [], MAX = info.length
+    const containerRef = useRef(null);
 
     const setRef = elem => {
         itemRefs.push(elem)
     }
+
+    const resizeHandler = () =>{
+        setWidth(containerRef.current.clientWidth);
+    }
+
+    useEffect(() => {
+        resizeHandler();
+        window.addEventListener('resize', resizeHandler);
+
+        return () => {
+            window.removeEventListener('resize', resizeHandler);
+        }
+    }, [])
 
     const focusOnDot = (id) => {
         itemRefs.forEach(item => item.classList.remove('slider__dot_active'))
@@ -24,12 +37,12 @@ const Slider = ({info}) => {
     const onSlideSelected = (i) => {
         setCounter(i + 1)
         focusOnDot(i)
-        setOffset(-(SLIDE_WIDTH * i))
+        setOffset(-(width * i))
     }
 
     const nextSlide = () => {
         if(counter < MAX){
-            setOffset((currentOffset) => currentOffset - SLIDE_WIDTH)
+            setOffset((currentOffset) => currentOffset - width)
             setCounter(currentCounter => currentCounter + 1)
             focusOnDot(counter)
         }
@@ -37,15 +50,11 @@ const Slider = ({info}) => {
 
     const prevSlide = () => {
         if(counter > 1){
-            setOffset((currentOffset) => currentOffset + SLIDE_WIDTH)
+            setOffset((currentOffset) => currentOffset + width)
             setCounter(currentCounter => currentCounter - 1)
             focusOnDot(counter - 2)
         }
     }
-
-    useEffect(() => {
-        console.log(counter)
-    })
 
     useEffect(() => {
         focusOnDot(0)
@@ -53,7 +62,7 @@ const Slider = ({info}) => {
 
     return (
         <section className="slider">
-            <div className="container">
+            <div className='container' ref={containerRef}>
                 <div className="slider__inner">
                     <div className="slider__wrap" style={{transform: `translateX(${offset}px)`}}>
                         {sliderContent(info)}

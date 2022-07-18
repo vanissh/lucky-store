@@ -1,10 +1,10 @@
 import { NavLink } from 'react-router-dom'
 import { useState } from 'react'
 import DropDownMenu from '../dropdown/DropDownMenu'
-import logo from '../../../static/icons/logo.png'
+import logo from '../../../assets/static/icons/logo.png'
 import './navBar.sass'
 
-const NavBar = ({links}) => {
+const NavBar = () => {
 
     const [active, setActive] = useState(false)
     const [rotate, setRotate] = useState(null)
@@ -21,7 +21,7 @@ const NavBar = ({links}) => {
 
     return (
         <nav className="nav">
-            <div className="container">
+            <div className='container'>
                 <div className="nav__content">
                     <NavLink to="/" className="nav__logo">
                         <img src={logo} alt="logo" className="nav__img"/>
@@ -31,24 +31,24 @@ const NavBar = ({links}) => {
                             className="nav__menu-wrapper"
                             onMouseLeave={toDisable}
                         >
-                            <NavLink  
-                                to="/"
+                            <NavLink  className="nav__link"
+                                to="/catalog"
                                 onMouseEnter={toActive}
                             >
                                 Каталог 
                                 <i className={'icon icon-arrow-down '+rotate}></i>
                             </NavLink>
-                            <DropDownMenu active={active} links={links}/>
+                            <DropDownMenu active={active}/>
                         </div>
-                        <NavLink to="#gallery">Галерея</NavLink>
-                        <NavLink to="#hits">Хит продаж</NavLink>
-                        <NavLink to="#contacts">Контакты</NavLink>
+                        <a className="nav__link" href="#gallery">Галерея</a>
+                        <a className="nav__link" href="#hits">Хит продаж</a>
+                        <a className="nav__link" href="#contacts">Контакты</a>
                     </div>
                     <div className="nav__icons">
                         <NavLink to="/search">
                             <i className="icon icon-search"></i>
                         </NavLink>
-                        <NavLink to="/favorite">
+                        <NavLink to="/favorites">
                             <i className="icon icon-heart"></i>
                             <span className="nav__icons-total">0</span>
                         </NavLink>
