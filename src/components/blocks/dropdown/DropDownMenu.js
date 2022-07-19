@@ -29,7 +29,7 @@ const DropDownMenu = ({active}) => {
                         style={{'animationDelay': delay+'s'}}
                         onClick={() => dispatch(setActiveCategory(link))}
                     >
-                        <i className="icon icon-heart"></i>{link.name}
+                        <i className="icon icon-moon"></i>{link.name}
                     </NavLink>
                 )
             })}

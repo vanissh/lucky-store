@@ -4,7 +4,7 @@ import Auth from '../components/auth/Auth'
 
 const Profile = () => {
 
-    const {isAuth} = useSelector(state => state.profileReducer)
+    const {isAuth} = useSelector(state => state.userReducer)
 
     return (
         <>
