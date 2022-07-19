@@ -34,6 +34,18 @@ body {
   padding-bottom: 70px;
 }
 
+.profile__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  padding: 30px;
+}
+.profile__content button {
+  margin-top: 30px;
+}
+
 @media (max-width: 1280px) {
     .container {
         max-width: 1140px;

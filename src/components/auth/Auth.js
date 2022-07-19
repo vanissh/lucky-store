@@ -2,44 +2,14 @@ import './auth.sass'
 import Button from '../blocks/button/Button'
 import { useState } from 'react'
 import { useDispatch } from 'react-redux'
-import { setUser, checkAuth } from '../../slices/userSlice'
-
-import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from "firebase/auth";
-
+import { signIn, signUp } from '../../slices/userSlice'
 
 const Auth = () => {
 
     const dispatch = useDispatch()
-    const auth = getAuth()
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
-
-    const handleLogin = () => {
-        signInWithEmailAndPassword(auth, email, password)
-            .then(({user}) => {
-                dispatch(setUser({
-                    email: user.email,
-                    token: user.accessToken,
-                    id: user.uid
-                }))
-                dispatch(checkAuth())
-            })
-            .catch(error => console.log(error))
-    }
-
-    const handleRegister = () => {
-        createUserWithEmailAndPassword(auth, email, password)
-            .then(({user}) => {
-                dispatch(setUser({
-                    email: user.email,
-                    token: user.accessToken,
-                    id: user.uid
-                }))
-                dispatch(checkAuth())
-            })
-            .catch(error => console.log(error))
-    }
 
     return (
         <div className="auth">
@@ -65,8 +35,8 @@ const Auth = () => {
                             onChange={e => setPassword(e.target.value)}
                             required />
                     </div>
-                    <Button type="submit" render={handleLogin}>Вход</Button>
-                    <Button type="submit" render={handleRegister}>Регистрация</Button>
+                    <Button type="submit" render={() => dispatch(signIn({email, password}))}>Вход</Button>
+                    <Button type="submit" render={() => dispatch(signUp({email, password}))}>Регистрация</Button>
             </div>
         </div>
     )
