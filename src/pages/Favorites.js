@@ -8,6 +8,7 @@ const Favorites = () => {
                 <h1 className="header">Избранное</h1>
                 <FavoritesItems/>
             </div>
+            <BtnScrollUp/>
         </>
     )
 }
