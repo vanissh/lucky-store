@@ -6,7 +6,9 @@ import { reducer as userReducer } from '../slices/userSlice';
 
 const store = configureStore({
     reducer: {productReducer, favReducer, cartReducer, userReducer},
-    middleware: getDefaultMiddleware => getDefaultMiddleware(),
+    middleware: getDefaultMiddleware => getDefaultMiddleware({
+        serializableCheck: false
+    }),
     devTools: process.env.NODE_ENV !== 'production',
 })
 

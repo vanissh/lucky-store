@@ -3,7 +3,7 @@ import { useHttp } from '../hooks/http.hook'
 import { modifyData } from '../aux/modifyData'
 
 export const fetchCategories = createAsyncThunk(
-     'products/fetchCategories',
+    'products/fetchCategories',
     () => {
         const {request} = useHttp()
         return request(`http://localhost:3001/categories`) 
